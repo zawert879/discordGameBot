@@ -7,6 +7,7 @@ createPlayer.onclick = ()=>{
     };
     ws.send(JSON.stringify(msg));
 };
+//empty line 
 const ws = new WebSocket('ws://localhost:3000');
 players = [];
 ws.onopen = ()=> {
